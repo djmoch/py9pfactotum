@@ -1,0 +1,45 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "py9pfactotum"
+authors = [
+	{name = "Daniel Moch", email = "daniel@danielmoch.com"}
+]
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: ISC License (ISCL)",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: POSIX",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://git.danielmoch.com/py9pfactotum"
+
+[project.optional-dependencies]
+dev = [
+	"flake8",
+	"flit",
+	"keyring",
+	"mypy",
+]
+
+[project.entry-points."keyring.backends"]
+factotum = "py9pfactotum.keyring"
+
+[tool.mypy]
+exclude = "/_vendor/"
+
+[[tool.mypy.overrides]]
+module = [
+	"py9pfactotum._vendor.py9p.py9p",
+	"py9pfactotum._vendor.py9p.utils",
+]
+follow_imports = "silent"
