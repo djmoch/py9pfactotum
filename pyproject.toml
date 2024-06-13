@@ -43,3 +43,7 @@ module = [
 	"py9pfactotum._vendor.py9p.utils",
 ]
 follow_imports = "silent"
+
+[tool.yapf]
+based_on_style = "pep8"
+USE_TABS = false

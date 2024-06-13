@@ -5,13 +5,13 @@ from typing import NoReturn, Optional
 from keyring.backend import KeyringBackend
 from keyring.credentials import SimpleCredential
 from keyring.errors import PasswordDeleteError, PasswordSetError
-from keyring.util import properties
+from keyring.compat import properties
 from .client import FactotumClient
 
 
 class FactotumBackend(KeyringBackend):
 
-    @properties.ClassProperty
+    @properties.classproperty
     @classmethod
     def priority(cls):
         return 1
