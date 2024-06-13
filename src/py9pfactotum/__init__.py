@@ -4,7 +4,7 @@ The factotum module implements a plan9port's auth(3) library.
 from typing import Dict
 from .client import FactotumClient
 
-__version__ = '0.1.1.dev0'
+__version__ = '0.1.1'
 
 
 def auth_getuserpasswd(**kwargs: str) -> Dict[str, str]:

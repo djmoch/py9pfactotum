@@ -17,11 +17,11 @@ classifiers = [
 	"Programming Language :: Python :: 3 :: Only",
 ]
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.9"
 dynamic = ["version", "description"]
 
 [project.urls]
-Home = "https://git.danielmoch.com/py9pfactotum"
+Home = "https://github.com/djmoch/py9pfactotum"
 
 [project.optional-dependencies]
 dev = [
