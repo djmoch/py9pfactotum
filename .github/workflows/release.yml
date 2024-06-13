@@ -1,0 +1,23 @@
+# See LICENSE file for copyright and license information
+name: Python release
+
+on:
+  push:
+    tags: [ "v*" ]
+
+jobs:
+  release:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12"
+    - name: Build package
+      run: |
+        python -m build
+    - name: Publish to Pypi
+      uses: pypa/gh-action-pypi-publish@release/v1
