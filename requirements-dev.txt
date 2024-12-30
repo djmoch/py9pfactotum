@@ -16,7 +16,7 @@ flit==3.9.0
     # via py9pfactotum (pyproject.toml)
 flit-core==3.9.0
     # via flit
-idna==3.8
+idna==3.10
     # via requests
 jaraco-classes==3.4.0
     # via keyring
