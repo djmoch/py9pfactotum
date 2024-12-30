@@ -18,8 +18,9 @@ backend (i.e., to read passwords from the running server).
 When using the FactotumClient directly, arguments are passed as
 keyword arguments, which are built into a key template internally:
 
-```
+``` python
 from py9pfactotum import FactotumClient
+
 c = FactotumClient()
 c.getpass(server='mail.example.org', user='johndoe')
 { 'user': 'johndoe', 'passwd': 'insecure' }
@@ -33,8 +34,9 @@ When using the auth(3) functions, the function signatures mirror
 their plan9port counterparts, except that structures are replaced
 with dictionaries.
 
-```
+``` python
 from py9pfactotum import auth_getuserpasswd
+
 c = auth_getuserpasswd(server='mail.example.org')
 { 'user': 'johndoe', 'passwd': 'insecure' }
 ```
