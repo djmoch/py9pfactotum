@@ -10,7 +10,7 @@ charset-normalizer==3.4.1
     # via requests
 docutils==0.21.2
     # via flit
-flake8==7.1.2
+flake8==7.2.0
     # via py9pfactotum (pyproject.toml)
 flit==3.11.0
     # via py9pfactotum (pyproject.toml)
