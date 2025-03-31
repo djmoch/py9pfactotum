@@ -36,7 +36,7 @@ mypy==1.15.0
     # via py9pfactotum (pyproject.toml)
 mypy-extensions==1.0.0
     # via mypy
-pycodestyle==2.12.1
+pycodestyle==2.13.0
     # via flake8
 pyflakes==3.2.0
     # via flake8
