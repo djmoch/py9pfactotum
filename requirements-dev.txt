@@ -38,7 +38,7 @@ mypy-extensions==1.0.0
     # via mypy
 pycodestyle==2.12.1
     # via flake8
-pyflakes==3.2.0
+pyflakes==3.3.2
     # via flake8
 requests==2.32.3
     # via flit
