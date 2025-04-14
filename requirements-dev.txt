@@ -46,7 +46,7 @@ tomli-w==1.2.0
     # via flit
 typing-extensions==4.13.1
     # via mypy
-urllib3==2.3.0
+urllib3==2.4.0
     # via requests
 
 # The following packages are considered to be unsafe in a requirements file:
