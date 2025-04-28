@@ -34,7 +34,7 @@ more-itertools==10.7.0
     #   jaraco-functools
 mypy==1.15.0
     # via py9pfactotum (pyproject.toml)
-mypy-extensions==1.0.0
+mypy-extensions==1.1.0
     # via mypy
 pycodestyle==2.13.0
     # via flake8
