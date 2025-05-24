@@ -25,10 +25,12 @@ Home = "https://github.com/djmoch/py9pfactotum"
 
 [project.optional-dependencies]
 dev = [
-	"flake8",
 	"flit",
 	"keyring",
 	"mypy",
+	"pre-commit",
+	"ruff",
+	"tox",
 ]
 
 [project.entry-points."keyring.backends"]
@@ -43,6 +45,46 @@ module = [
 	"py9pfactotum._vendor.py9p.utils",
 ]
 follow_imports = "silent"
+
+[tool.ruff]
+extend-exclude = ["src/py9pfactotum/_vendor"]
+output-format = "concise"
+
+[tool.ruff.lint]
+select = [
+	# pycodestyle
+	"E",
+	# pyflakes
+	"F",
+	# mccabe
+	"C90",
+	# isort
+	"I",
+	# pep8-naming
+	"N",
+	# pyupgrade
+	"UP",
+	# reff-specific
+	"RUF",
+]
+
+[tool.tox]
+requires = ["tox>=4.26"]
+env_list = [
+	"3.9",
+	"3.10",
+	"3.11",
+	"3.12",
+	"3.13",
+]
+
+[tool.tox.env_run_base]
+description = "Run lint under {base_python}"
+deps = ["-r requirements-dev.txt"]
+commands = [
+	["ruff", "check", "src{/}py9pfactotum"],
+	["mypy", "src{/}py9pfactotum"],
+]
 
 [tool.yapf]
 based_on_style = "pep8"
