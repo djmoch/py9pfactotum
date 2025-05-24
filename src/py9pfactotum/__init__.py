@@ -1,13 +1,13 @@
 """
 The factotum module implements a plan9port's auth(3) library.
 """
-from typing import Dict
+
 from .client import FactotumClient
 
-__version__ = '0.1.1'
+__version__ = "0.1.1"
 
 
-def auth_getuserpasswd(**kwargs: str) -> Dict[str, str]:
+def auth_getuserpasswd(**kwargs: str) -> dict[str, str]:
     """
     Retrieve a password from the factotum server. Kwargs should
     contain the desired key template. Returns a dictionary containing

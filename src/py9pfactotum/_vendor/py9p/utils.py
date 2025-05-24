@@ -9,5 +9,3 @@ if sys.version_info[0] == 2:
 else:
     def bytes3(x):
         return bytes(x, 'utf-8')
-
-
