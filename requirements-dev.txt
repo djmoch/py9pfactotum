@@ -6,7 +6,7 @@
 #
 cachetools==6.0.0
     # via tox
-certifi==2025.4.26
+certifi==2025.6.15
     # via requests
 cfgv==3.4.0
     # via pre-commit
