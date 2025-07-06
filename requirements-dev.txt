@@ -72,7 +72,7 @@ ruff==0.12.0
     # via py9pfactotum (pyproject.toml)
 tomli-w==1.2.0
     # via flit
-tox==4.26.0
+tox==4.27.0
     # via py9pfactotum (pyproject.toml)
 typing-extensions==4.14.0
     # via mypy
