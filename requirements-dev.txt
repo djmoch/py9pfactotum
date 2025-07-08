@@ -74,7 +74,7 @@ tomli-w==1.2.0
     # via flit
 tox==4.27.0
     # via py9pfactotum (pyproject.toml)
-typing-extensions==4.14.0
+typing-extensions==4.14.1
     # via mypy
 urllib3==2.4.0
     # via requests
