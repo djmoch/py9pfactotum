@@ -76,7 +76,7 @@ tox==4.27.0
     # via py9pfactotum (pyproject.toml)
 typing-extensions==4.14.1
     # via mypy
-urllib3==2.4.0
+urllib3==2.5.0
     # via requests
 virtualenv==20.31.2
     # via
