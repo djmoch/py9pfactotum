@@ -68,7 +68,7 @@ pyyaml==6.0.2
     # via pre-commit
 requests==2.32.4
     # via flit
-ruff==0.12.3
+ruff==0.12.5
     # via py9pfactotum (pyproject.toml)
 tomli-w==1.2.0
     # via flit
