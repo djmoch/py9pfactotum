@@ -20,7 +20,7 @@ distlib==0.4.0
     # via virtualenv
 docutils==0.22
     # via flit
-filelock==3.18.0
+filelock==3.19.1
     # via
     #   tox
     #   virtualenv
