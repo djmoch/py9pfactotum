@@ -4,7 +4,7 @@
 #
 #    pip-compile --extra=dev --output-file=requirements-dev.txt --strip-extras pyproject.toml
 #
-cachetools==6.1.0
+cachetools==6.2.2
     # via tox
 certifi==2025.8.3
     # via requests
