@@ -38,6 +38,16 @@ factotum = "py9pfactotum.keyring"
 
 [tool.mypy]
 exclude = "/_vendor/"
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+	"py9pfactotum.client",
+	"py9pfactotum.errors",
+	"py9pfactotum.keyring",
+	"py9pfactotum.util",
+]
+disallow_untyped_calls = false
 
 [[tool.mypy.overrides]]
 module = [
