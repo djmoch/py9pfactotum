@@ -16,7 +16,7 @@ charset-normalizer==3.4.7
     # via requests
 colorama==0.4.6
     # via tox
-distlib==0.4.0
+distlib==0.4.1
     # via virtualenv
 docutils==0.22.4
     # via flit
